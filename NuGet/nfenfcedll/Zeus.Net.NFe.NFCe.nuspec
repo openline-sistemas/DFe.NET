@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
-        <id>Zeus.Net.NFe.NFCe</id>
+        <id>Zeus.OpenLine.Net.NFe.NFCe</id>
         <version>1.0.1</version>
-        <title>Zeus NF-e e NFC-e (x86/x64)</title>
-        <authors>Zeus</authors>
-        <owners>Zeus</owners>
+        <title>Zeus Openline NF-e e NFC-e (x86/x64)</title>
+        <authors>Openline Sistemas, Zeus</authors>
+        <owners>Openline Sistemas</owners>
         <projectUrl>https://github.com/ZeusAutomacao/DFe.NET</projectUrl>
         <iconUrl>https://avatars0.githubusercontent.com/u/32456879?s=200&amp;v=4</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -23,6 +23,11 @@
         <file src="..\..\NFe.Utils\bin\Release\NFe.Utils.dll" target="lib\net40\NFe.Utils.dll" />
         <file src="..\..\NFe.Wsdl\bin\Release\NFe.Wsdl.dll" target="lib\net40\NFe.Wsdl.dll" />
         <file src="..\..\DFe.Wsdl\bin\Release\DFe.Wsdl.dll" target="lib\net40\DFe.Wsdl.dll" />
+        <file src="..\..\NFe.Danfe.Fast\bin\Release\NFe.Danfe.Base.dll" target="lib\net40\NFe.Danfe.Base.dll" />
+        <file src="..\..\NFe.Danfe.Fast\bin\Release\NFe.Danfe.Fast.dll" target="lib\net40\NFe.Danfe.Fast.dll" />
+        <file src="..\..\NFe.Danfe.Fast\bin\Release\FastReport.dll" target="lib\net40\FastReport.dll" />
+        <file src="..\..\NFe.Danfe.Fast\bin\Release\FastReport.Bars.dll" target="lib\net40\FastReport.Bars.dll" />
+        <file src="..\..\NFe.Danfe.Fast\bin\Release\FastReport.Editor.dll" target="lib\net40\FastReport.Editor.dll" />
         <file src="..\..\DFe.Classes.Standard\bin\Release\netstandard2.0\DFe.Classes.Standard.dll" target="lib\netstandard2.0\DFe.Classes.Standard.dll" />
         <file src="..\..\DFe.Utils.Standard\bin\Release\netstandard2.0\DFe.Utils.Standard.dll" target="lib\netstandard2.0\DFe.Utils.Standard.dll" />
         <file src="..\..\NFe.Classes.Standard\bin\Release\netstandard2.0\NFe.Classes.Standard.dll" target="lib\netstandard2.0\NFe.Classes.Standard.dll" />
@@ -30,5 +35,7 @@
         <file src="..\..\NFe.Utils.Standard\bin\Release\netstandard2.0\NFe.Utils.Standard.dll" target="lib\netstandard2.0\NFe.Utils.Standard.dll" />
         <file src="..\..\NFe.Wsdl.Standard\bin\Release\netstandard2.0\NFe.Wsdl.Standard.dll" target="lib\netstandard2.0\NFe.Wsdl.Standard.dll" />
         <file src="..\..\DFe.Wsdl.Standard\bin\Release\netstandard2.0\DFe.Wsdl.Standard.dll" target="lib\netstandard2.0\DFe.Wsdl.Standard.dll" />
+        <file src="..\..\NFe.Danfe.Fast.Standard\bin\Release\netstandard2.0\NFe.Danfe.Base.Standard.dll" target="lib\netstandard2.0\NFe.Danfe.Base.Standard.dll" />
+        <file src="..\..\NFe.Danfe.Fast.Standard\bin\Release\netstandard2.0\NFe.Danfe.Fast.Standard.dll" target="lib\netstandard2.0\NFe.Danfe.Fast.Standard.dll" />
     </files>
 </package>
