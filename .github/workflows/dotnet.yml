@@ -47,30 +47,22 @@ jobs:
         dir ".\NFe.Wsdl.Standard\bin\Release\"
         dir ".\DFe.Wsdl\bin\Release\"
         dir ".\NFe.Danfe.Fast\bin\Release\"
-    - name: Mostra pastas
-      run: |
-        dir
-     #   cd DFe.Classes/bin/Release
-     #   dir
-     #   cd..
-     #   cd..
-     #   cd NFe.Classes/bin/Release
-     #   dir
-     #   cd..
-     #   cd..
-     #   cd NFe.Wsdl.Standard/bin/Release
-     #   dir
-     #   cd..
-     #   cd..
-     #   cd DFe.Wsdl/bin/Release
-     #   dir
-        
+
     #- name: Test
     #  run: dotnet test --no-build --verbosity normal
-    
-    #- name: Upload a Build Artifact
-    #  uses: actions/upload-artifact@v3.0.0
-    #  with:
-    #    name: DFe.NET
-    #    Available Options: warn
-    #    retention-days: 1
+  
+    - name: Upload Artefato NFe 
+      uses: actions/upload-artifact@v3.0.0
+      with:
+        name: NFe
+        path: |
+          ".\DFe.Classes\bin\Release\**"
+          ".\DFe.Utils\bin\Release\**"
+          ".\NFe.Classes\bin\Release\**"
+          ".\NFe.Servicos\bin\Release\**"
+          ".\NFe.Utils\bin\Release\**"
+          ".\NFe.Wsdl.Standard\bin\Release\**"
+          ".\DFe.Wsdl\bin\Release\**"
+          ".\NFe.Danfe.Fast\bin\Release\**"
+        if-no-files-found: warn
+        retention-days: 1
