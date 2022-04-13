@@ -41,15 +41,20 @@ jobs:
         dotnet build ".\NFe.Danfe.Fast\NFe.Danfe.Fast.csproj" --no-restore -f net48
     - name: Mostra pastas
       run: |
-        dir ".\DFe.Classes\bin\Release
-        dir ".\DFe.Utils\bin\Release
-        dir ".\NFe.Classes\bin\Release
-        dir ".\NFe.Servicos\bin\Release
-        dir ".\NFe.Utils\bin\Release
-        dir ".\NFe.Wsdl\bin\Release
-        dir ".\NFe.Wsdl.Standard\bin\Release
-        dir ".\DFe.Wsdl\bin\Release
-        dir ".\NFe.Danfe.Fast\bin\Release
+        cd DFe.Classes/bin/Release
+        dir
+        cd..
+        cd..
+        cd NFe.Classes/bin/Release
+        dir
+        cd..
+        cd..
+        cd NFe.Wsdl.Standard/bin/Release
+        dir
+        cd..
+        cd..
+        cd DFe.Wsdl/bin/Release
+        dir
         
     #- name: Test
     #  run: dotnet test --no-build --verbosity normal
