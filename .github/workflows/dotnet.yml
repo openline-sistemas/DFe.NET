@@ -21,32 +21,32 @@ jobs:
       run: dotnet restore
     - name: Build net48
       run: | 
-        dotnet build ".\DFe.Classes\DFe.Classes.csproj" --no-restore -f net48
-        dotnet build ".\DFe.Utils\DFe.Utils.csproj" --no-restore -f net48
-        dotnet build ".\NFe.Classes\NFe.Classes.csproj" --no-restore -f net48
-        dotnet build ".\NFe.Servicos\NFe.Servicos.csproj" --no-restore -f net48
-        dotnet build ".\NFe.Utils\NFe.Utils.csproj" --no-restore -f net48
-        dotnet build ".\NFe.Wsdl\NFe.Wsdl.csproj" --no-restore -f net48
-        dotnet build ".\DFe.Wsdl\DFe.Wsdl.csproj" --no-restore -f net48
-        dotnet build ".\NFe.Danfe.Fast\NFe.Danfe.Fast.csproj" --no-restore -f net48
+        dotnet build ".\DFe.Classes\DFe.Classes.csproj" --no-restore -f net48 -c "Release"
+        dotnet build ".\DFe.Utils\DFe.Utils.csproj" --no-restore -f net48 -c "Release"
+        dotnet build ".\NFe.Classes\NFe.Classes.csproj" --no-restore -f net48 -c "Release"
+        dotnet build ".\NFe.Servicos\NFe.Servicos.csproj" --no-restore -f net48 -c "Release"
+        dotnet build ".\NFe.Utils\NFe.Utils.csproj" --no-restore -f net48 -c "Release"
+        dotnet build ".\NFe.Wsdl\NFe.Wsdl.csproj" --no-restore -f net48 -c "Release"
+        dotnet build ".\DFe.Wsdl\DFe.Wsdl.csproj" --no-restore -f net48 -c "Release"
+        dotnet build ".\NFe.Danfe.Fast\NFe.Danfe.Fast.csproj" --no-restore -f net48 -c "Release"
     - name: Build net6.0
       run: |
-        dotnet build ".\DFe.Classes\DFe.Classes.csproj" --no-restore -f net6.0
-        dotnet build ".\DFe.Utils\DFe.Utils.csproj" --no-restore -f net6.0
-        dotnet build ".\NFe.Classes\NFe.Classes.csproj" --no-restore -f net6.0
-        dotnet build ".\NFe.Servicos\NFe.Servicos.csproj" --no-restore -f net6.0
-        dotnet build ".\NFe.Utils\NFe.Utils.csproj" --no-restore -f net6.0
-        dotnet build ".\NFe.Wsdl.Standard\NFe.Wsdl.Standard.csproj" --no-restore -f net6.0
-        dotnet build ".\DFe.Wsdl\DFe.Wsdl.csproj" --no-restore -f net6.0
-        dotnet build ".\NFe.Danfe.Fast\NFe.Danfe.Fast.csproj" --no-restore -f net6.0
-        dir ".\DFe.Classes\bin\"
-        dir ".\DFe.Utils\bin\"
-        dir ".\NFe.Classes\bin\"
-        dir ".\NFe.Servicos\bin\"
-        dir ".\NFe.Utils\bin\"
-        dir ".\NFe.Wsdl.Standard\bin\"
-        dir ".\DFe.Wsdl\bin\"
-        dir ".\NFe.Danfe.Fast\bin\"
+        dotnet build ".\DFe.Classes\DFe.Classes.csproj" --no-restore -f net6.0 -c "Release"
+        dotnet build ".\DFe.Utils\DFe.Utils.csproj" --no-restore -f net6.0 -c "Release"
+        dotnet build ".\NFe.Classes\NFe.Classes.csproj" --no-restore -f net6.0 -c "Release"
+        dotnet build ".\NFe.Servicos\NFe.Servicos.csproj" --no-restore -f net6.0 -c "Release"
+        dotnet build ".\NFe.Utils\NFe.Utils.csproj" --no-restore -f net6.0 -c "Release"
+        dotnet build ".\NFe.Wsdl.Standard\NFe.Wsdl.Standard.csproj" --no-restore -f net6.0 -c "Release"
+        dotnet build ".\DFe.Wsdl\DFe.Wsdl.csproj" --no-restore -f net6.0 -c "Release"
+        dotnet build ".\NFe.Danfe.Fast\NFe.Danfe.Fast.csproj" --no-restore -f net6.0 -c "Release"
+        dir ".\DFe.Classes\bin\Release\"
+        dir ".\DFe.Utils\bin\Release\"
+        dir ".\NFe.Classes\bin\Release\"
+        dir ".\NFe.Servicos\bin\Release\"
+        dir ".\NFe.Utils\bin\Release\"
+        dir ".\NFe.Wsdl.Standard\bin\Release\"
+        dir ".\DFe.Wsdl\bin\Release\"
+        dir ".\NFe.Danfe.Fast\bin\Release\"
     - name: Mostra pastas
       run: |
         dir
