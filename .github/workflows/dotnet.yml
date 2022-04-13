@@ -61,6 +61,7 @@ jobs:
           NFe.Classes/bin/*/**/
           NFe.Servicos/bin/*/**/
           NFe.Utils/bin/*/**/
+          NFe.Wsdl/bin/*/**/
           NFe.Wsdl.Standard/bin/*/**/
           DFe.Wsdl/bin/*/**/
           NFe.Danfe.Fast/bin/*/**/
