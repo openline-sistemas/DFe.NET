@@ -31,30 +31,39 @@ jobs:
         dotnet build ".\NFe.Danfe.Fast\NFe.Danfe.Fast.csproj" --no-restore -f net48
     - name: Build net6.0
       run: |
-        dotnet build ".\DFe.Classes\DFe.Classes.csproj" --no-restore -f net48
-        dotnet build ".\DFe.Utils\DFe.Utils.csproj" --no-restore -f net48
-        dotnet build ".\NFe.Classes\NFe.Classes.csproj" --no-restore -f net48
-        dotnet build ".\NFe.Servicos\NFe.Servicos.csproj" --no-restore -f net48
-        dotnet build ".\NFe.Utils\NFe.Utils.csproj" --no-restore -f net48
+        dotnet build ".\DFe.Classes\DFe.Classes.csproj" --no-restore -f net6.0
+        dotnet build ".\DFe.Utils\DFe.Utils.csproj" --no-restore -f net6.0
+        dotnet build ".\NFe.Classes\NFe.Classes.csproj" --no-restore -f net6.0
+        dotnet build ".\NFe.Servicos\NFe.Servicos.csproj" --no-restore -f net6.0
+        dotnet build ".\NFe.Utils\NFe.Utils.csproj" --no-restore -f net6.0
         dotnet build ".\NFe.Wsdl.Standard\NFe.Wsdl.Standard.csproj" --no-restore -f net6.0
-        dotnet build ".\DFe.Wsdl\DFe.Wsdl.csproj" --no-restore -f net48
-        dotnet build ".\NFe.Danfe.Fast\NFe.Danfe.Fast.csproj" --no-restore -f net48
+        dotnet build ".\DFe.Wsdl\DFe.Wsdl.csproj" --no-restore -f net6.0
+        dotnet build ".\NFe.Danfe.Fast\NFe.Danfe.Fast.csproj" --no-restore -f net6.0
+        dir ".\DFe.Classes\"
+        dir ".\DFe.Utils\"
+        dir ".\NFe.Classes\"
+        dir ".\NFe.Servicos\"
+        dir ".\NFe.Utils\"
+        dir ".\NFe.Wsdl.Standard\"
+        dir ".\DFe.Wsdl\"
+        dir ".\NFe.Danfe.Fast\"
     - name: Mostra pastas
       run: |
-        cd DFe.Classes/bin/Release
         dir
-        cd..
-        cd..
-        cd NFe.Classes/bin/Release
-        dir
-        cd..
-        cd..
-        cd NFe.Wsdl.Standard/bin/Release
-        dir
-        cd..
-        cd..
-        cd DFe.Wsdl/bin/Release
-        dir
+     #   cd DFe.Classes/bin/Release
+     #   dir
+     #   cd..
+     #   cd..
+     #   cd NFe.Classes/bin/Release
+     #   dir
+     #   cd..
+     #   cd..
+     #   cd NFe.Wsdl.Standard/bin/Release
+     #   dir
+     #   cd..
+     #   cd..
+     #   cd DFe.Wsdl/bin/Release
+     #   dir
         
     #- name: Test
     #  run: dotnet test --no-build --verbosity normal
