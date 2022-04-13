@@ -56,13 +56,13 @@ jobs:
       with:
         name: NFe
         path: |
-          "\DFe.Classes\bin\Release\**"
-          "\DFe.Utils\bin\Release\**"
-          "\NFe.Classes\bin\Release\**"
-          "\NFe.Servicos\bin\Release\**"
-          "\NFe.Utils\bin\Release\**"
-          "\NFe.Wsdl.Standard\bin\Release\**"
-          "\DFe.Wsdl\bin\Release\**"
-          "\NFe.Danfe.Fast\bin\Release\**"
+          DFe.Classes/bin/Release/**/
+          DFe.Utils/bin/Release/**/
+          NFe.Classes/bin/Release/**/
+          NFe.Servicos/bin/Release/**/
+          NFe.Utils/bin/Release/**/
+          NFe.Wsdl.Standard/bin/Release/**/
+          DFe.Wsdl/bin/Release/**/
+          NFe.Danfe.Fast/bin/Release/**/
         if-no-files-found: error
         retention-days: 1
