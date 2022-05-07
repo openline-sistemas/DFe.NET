@@ -297,7 +297,7 @@ steps:
   displayName: Gera Pacote Zeus.OpenLine.Net.NFe.NFCe
   inputs:
     command: 'pack'
-    packagesToPack: '$(Build.SourcesDirectory)/DFe.NET/NuGet/nfenfcedll/Zeus.Net.NFe.NFCe.nuspec'
+    packagesToPack: '$(Build.SourcesDirectory)/NuGet/nfenfcedll/Zeus.Net.NFe.NFCe.nuspec'
     packDestination: '$(Build.ArtifactStagingDirectory)/Zeus.OpenLine.Net.NFe.NFCe.nupkg'
     versioningScheme: 'off'
 
