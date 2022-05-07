@@ -84,10 +84,10 @@ steps:
     workingDirectory: '$(Build.SourcesDirectory)'
 
 - task: DotNetCoreCLI@2
-  displayName: Build NFe.Danfe.Fast net 6.0
+  displayName: Build NFe.Danfe.OpenFast net 6.0
   inputs:
     command: 'build'
-    projects: './NFe.Danfe.Fast/NFe.Danfe.Fast.csproj'
+    projects: './NFe.Danfe.OpenFast/NFe.Danfe.OpenFast.csproj'
     arguments: '--no-restore -f net6.0 -c "Release"'
     workingDirectory: '$(Build.SourcesDirectory)'
 
@@ -216,10 +216,10 @@ steps:
     workingDirectory: '$(Build.SourcesDirectory)'
 
 - task: DotNetCoreCLI@2
-  displayName: Build NFe.Danfe.Fast net standard 2.0
+  displayName: Build NFe.Danfe.OpenFast net standard 2.0
   inputs:
     command: 'build'
-    projects: './NFe.Danfe.Fast/NFe.Danfe.Fast.csproj'
+    projects: './NFe.Danfe.OpenFast/NFe.Danfe.OpenFast.csproj'
     arguments: '--no-restore -f netstandard2.0 -c "Release"'
     workingDirectory: '$(Build.SourcesDirectory)'
 
