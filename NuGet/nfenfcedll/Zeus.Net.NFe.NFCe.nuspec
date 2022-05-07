@@ -39,7 +39,7 @@
 		<file src="..\..\NFe.Wsdl.Standard\bin\Release\netstandard2.0\NFe.Wsdl.Standard.dll" target="lib/netstandard2.0/NFe.Wsdl.Standard.dll" />
 		<file src="..\..\NFe.Servicos\bin\Release\netstandard2.0\NFe.Servicos.dll" target="lib/netstandard2.0/NFe.Servicos.dll" />
 		<file src="..\..\NFe.Danfe.Base\bin\Release\netstandard2.0\NFe.Danfe.Base.dll" target="lib/netstandard2.0/NFe.Danfe.Base.dll" />
-		<file src="..\..\NFe.Danfe.Fast\bin\Release\netstandard2.0\NFe.Danfe.Fast.dll" target="lib/netstandard2.0/NFe.Danfe.Fast.dll" />
+		<file src="..\..\NFe.Danfe.OpenFast\bin\Release\netstandard2.0\NFe.Danfe.OpenFast.dll" target="lib/netstandard2.0/NFe.Danfe.OpenFast.dll" />
 		
 		<file src="..\..\DFe.Classes\bin\Release\net6.0\DFe.Classes.dll" target="lib/net6.0/DFe.Classes.dll" />
 		<file src="..\..\DFe.Utils\bin\Release\net6.0\DFe.Utils.dll" target="lib/net6.0/DFe.Utils.dll" />
@@ -49,7 +49,7 @@
 		<file src="..\..\NFe.Wsdl.Standard\bin\Release\net6.0\NFe.Wsdl.Standard.dll" target="lib/net6.0/NFe.Wsdl.Standard.dll" />
 		<file src="..\..\NFe.Servicos\bin\Release\net6.0\NFe.Servicos.dll" target="lib/net6.0/NFe.Servicos.dll" />
 		<file src="..\..\NFe.Danfe.Base\bin\Release\net6.0\NFe.Danfe.Base.dll" target="lib/net6.0/NFe.Danfe.Base.dll" />
-		<file src="..\..\NFe.Danfe.Fast\bin\Release\net6.0\NFe.Danfe.Fast.dll" target="lib/net6.0/NFe.Danfe.Fast.dll" />
+		<file src="..\..\NFe.Danfe.OpenFast\bin\Release\net6.0\NFe.Danfe.OpenFast.dll" target="lib/net6.0/NFe.Danfe.OpenFast.dll" />
 		
     </files>
 </package>
