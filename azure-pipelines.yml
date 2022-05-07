@@ -79,7 +79,7 @@ steps:
   displayName: Build NFe.Wsdl net 6.0
   inputs:
     command: 'build'
-    projects: './NFe.Wsdl/NFe.Wsdl.csproj'
+    projects: './NFe.Wsdl/NFe.Wsdl.Standard.csproj'
     arguments: '--no-restore -f net6.0 -c "Release"'
     workingDirectory: '$(Build.SourcesDirectory)'
 
@@ -211,7 +211,7 @@ steps:
   displayName: Build NFe.Wsdl net standard 2.0
   inputs:
     command: 'build'
-    projects: './NFe.Wsdl/NFe.Wsdl.csproj'
+    projects: './NFe.Wsdl/NFe.Wsdl.Standard.csproj'
     arguments: '--no-restore -f netstandard2.0 -c "Release"'
     workingDirectory: '$(Build.SourcesDirectory)'
 
