@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Zeus.OpenLine.Net.NFe.NFCe</id>
-        <version>1.1.0</version>
+        <version>1.1.1</version>
         <title>Zeus Openline NF-e e NFC-e (x86/x64)</title>
         <authors>Openline Sistemas, Zeus</authors>
         <owners>Openline Sistemas</owners>
-        <projectUrl>https://github.com/ZeusAutomacao/DFe.NET</projectUrl>
+        <projectUrl>https://github.com/openline-sistemas/DFe.NET/</projectUrl>
         <iconUrl>https://avatars0.githubusercontent.com/u/32456879?s=200&amp;v=4</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Biblioteca para geração de nf-e e nfc-e.</description>
-        <releaseNotes>Multitarget no projeto para .Net 462 e .NetCore 6.0 e .Net Standard 2.0</releaseNotes>
+        <releaseNotes>Atualização do pacote nuget para trazer arquivos .frx para gerar danfe</releaseNotes>
         <copyright>zeus</copyright>
         <language>pt-BR</language>
         <tags>nfc-e nf-e nfce nfe</tags>
@@ -39,6 +39,9 @@
 		<file src="..\..\NFe.Wsdl.Standard\bin\Release\netstandard2.0\NFe.Wsdl.Standard.dll" target="lib/netstandard2.0/NFe.Wsdl.Standard.dll" />
 		<file src="..\..\NFe.Servicos\bin\Release\netstandard2.0\NFe.Servicos.dll" target="lib/netstandard2.0/NFe.Servicos.dll" />
 		<file src="..\..\NFe.Danfe.Base\bin\Release\netstandard2.0\NFe.Danfe.Base.dll" target="lib/netstandard2.0/NFe.Danfe.Base.dll" />
+		<file src="..\..\NFe.Danfe.Base\bin\Release\netstandard2.0\NFe\NFeEvento.frx" target="lib/netstandard2.0/NFe/NFeEvento.frx" />
+		<file src="..\..\NFe.Danfe.Base\bin\Release\netstandard2.0\NFe\NFeRetrato.frx" target="lib/netstandard2.0/NFe/NFeRetrato.frx" />
+		<file src="..\..\NFe.Danfe.Base\bin\Release\netstandard2.0\NFe\NFeSimplificado.frx" target="lib/netstandard2.0/NFe/NFeSimplificado.frx" />
 		<file src="..\..\NFe.Danfe.OpenFast\bin\Release\netstandard2.0\NFe.Danfe.OpenFast.dll" target="lib/netstandard2.0/NFe.Danfe.OpenFast.dll" />
 		
 		<file src="..\..\DFe.Classes\bin\Release\net6.0\DFe.Classes.dll" target="lib/net6.0/DFe.Classes.dll" />
@@ -49,6 +52,9 @@
 		<file src="..\..\NFe.Wsdl.Standard\bin\Release\net6.0\NFe.Wsdl.Standard.dll" target="lib/net6.0/NFe.Wsdl.Standard.dll" />
 		<file src="..\..\NFe.Servicos\bin\Release\net6.0\NFe.Servicos.dll" target="lib/net6.0/NFe.Servicos.dll" />
 		<file src="..\..\NFe.Danfe.Base\bin\Release\net6.0\NFe.Danfe.Base.dll" target="lib/net6.0/NFe.Danfe.Base.dll" />
+		<file src="..\..\NFe.Danfe.Base\bin\Release\net6.0\NFe\NFeEvento.frx" target="lib/net6.0/NFe/NFeEvento.frx" />
+		<file src="..\..\NFe.Danfe.Base\bin\Release\net6.0\NFe\NFeRetrato.frx" target="lib/net6.0/NFe/NFeRetrato.frx" />
+		<file src="..\..\NFe.Danfe.Base\bin\Release\net6.0\NFe\NFeSimplificado.frx" target="lib/net6.0/NFe/NFeSimplificado.frx" />
 		<file src="..\..\NFe.Danfe.OpenFast\bin\Release\net6.0\NFe.Danfe.OpenFast.dll" target="lib/net6.0/NFe.Danfe.OpenFast.dll" />
 		
     </files>
