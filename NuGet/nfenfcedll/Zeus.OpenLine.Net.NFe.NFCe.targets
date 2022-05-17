@@ -1,41 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <!--<ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)NFCe/NFCe.frx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-	
-    <None Include="$(MSBuildThisFileDirectory)NFe/NFeEvento.frx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-
-    <None Include="$(MSBuildThisFileDirectory)NFe/NFeRetrato.frx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  
-    <None Include="$(MSBuildThisFileDirectory)NFe/NFeSimplificado.frx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>-->
 
 	<Target Name="AfterBuild">
-		<ItemGroup>
-			<NFCeFolder Include="$(MSBuildThisFileDirectory)NFCe\*" />
-			<NFeFolder Include="$(MSBuildThisFileDirectory)NFe\*" />
-		</ItemGroup>
 		<Copy
-		  SourceFiles="@(NFCeFolder)"
-		  DestinationFiles="@(NFCeFolder->'$(OutDir)\NFCe\%(Filename)%(Extension)')"
+		  SourceFiles="$(MSBuildThisFileDirectory)NFCe\NFCe.frx"
+		  DestinationFiles="$(OutDir)\NFCe\NFCe.frx"
 		  SkipUnchangedFiles="false"
 		  OverwriteReadOnlyFiles="true"
 		  Retries="3"
 		  RetryDelayMilliseconds="300" />
 		<Copy
-		  SourceFiles="@(NFeFolder)"
-		  DestinationFiles="@(NFCeFolder->'$(OutDir)\NFe\%(Filename)%(Extension)')"
+		  SourceFiles="$(MSBuildThisFileDirectory)NFe\NFeEvento.frx"
+		  DestinationFiles="$(OutDir)\NFe\NFeEvento.frx"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+		<Copy
+		  SourceFiles="$(MSBuildThisFileDirectory)NFe\NFeRetrato.frx"
+		  DestinationFiles="$(OutDir)\NFe\NFeRetrato.frx"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+		<Copy
+		  SourceFiles="$(MSBuildThisFileDirectory)NFe\NFeSimplificado.frx"
+		  DestinationFiles="$(OutDir)\NFe\NFeSimplificado.frx"
 		  SkipUnchangedFiles="false"
 		  OverwriteReadOnlyFiles="true"
 		  Retries="3"
 		  RetryDelayMilliseconds="300" />
 	</Target>
+	
 </Project>
