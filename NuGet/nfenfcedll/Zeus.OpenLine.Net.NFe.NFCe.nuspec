@@ -69,9 +69,9 @@
 
 		
 		<file src="Zeus.OpenLine.Net.NFe.NFCe.targets" target="build/Zeus.OpenLine.Net.NFe.NFCe.targets" />
-		<file src="..\..\NFe.Danfe.Base\NFCe\NFCe.frx" target="build/NFCe.frx" />
-		<file src="..\..\NFe.Danfe.Base\NFe\NFeEvento.frx" target="build/NFeEvento.frx" />
-		<file src="..\..\NFe.Danfe.Base\NFe\NFeRetrato.frx" target="build/NFeRetrato.frx" />
-		<file src="..\..\NFe.Danfe.Base\NFe\NFeSimplificado.frx" target="build/NFeSimplificado.frx" />
+		<file src="..\..\NFe.Danfe.Base\NFCe\NFCe.frx" target="build/NFCe/NFCe.frx" />
+		<file src="..\..\NFe.Danfe.Base\NFe\NFeEvento.frx" target="build/NFe/NFeEvento.frx" />
+		<file src="..\..\NFe.Danfe.Base\NFe\NFeRetrato.frx" target="build/NFe/NFeRetrato.frx" />
+		<file src="..\..\NFe.Danfe.Base\NFe\NFeSimplificado.frx" target="build/NFe/NFeSimplificado.frx" />
     </files>
 </package>
