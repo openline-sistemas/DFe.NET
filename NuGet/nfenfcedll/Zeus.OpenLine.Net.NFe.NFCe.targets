@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
+  <!--<ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)NFCe/NFCe.frx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-
+	
     <None Include="$(MSBuildThisFileDirectory)NFe/NFeEvento.frx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -12,10 +12,30 @@
     <None Include="$(MSBuildThisFileDirectory)NFe/NFeRetrato.frx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	  
+  
     <None Include="$(MSBuildThisFileDirectory)NFe/NFeSimplificado.frx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
+  </ItemGroup>-->
 
+	<Target Name="AfterBuild">
+		<ItemGroup>
+			<NFCeFolder Include="$(MSBuildThisFileDirectory)NFCe\*" />
+			<NFeFolder Include="$(MSBuildThisFileDirectory)NFe\*" />
+		</ItemGroup>
+		<Copy
+		  SourceFiles="@(NFCeFolder)"
+		  DestinationFiles="@(NFCeFolder->'$(OutDir)\NFCe\%(Filename)%(Extension)')"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+		<Copy
+		  SourceFiles="@(NFeFolder)"
+		  DestinationFiles="@(NFCeFolder->'$(OutDir)\NFe\%(Filename)%(Extension)')"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+	</Target>
 </Project>
