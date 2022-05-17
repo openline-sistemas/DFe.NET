@@ -2,22 +2,22 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)NFCe.frx">
-      <Link>NFCe.frx</Link>
+      <Link>NFCe/NFCe.frx</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
 
     <None Include="$(MSBuildThisFileDirectory)NFeEvento.frx">
-      <Link>NFeEvento.frx</Link>
+      <Link>NFe/NFeEvento.frx</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
 
     <None Include="$(MSBuildThisFileDirectory)NFeRetrato.frx">
-      <Link>NFeRetrato.frx</Link>
+      <Link>NFe/NFeRetrato.frx</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
 
     <None Include="$(MSBuildThisFileDirectory)NFeSimplificado.frx">
-      <Link>NFeSimplificado.frx</Link>
+      <Link>NFe/NFeSimplificado.frx</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

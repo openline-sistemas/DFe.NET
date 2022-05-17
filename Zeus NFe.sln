@@ -113,8 +113,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppTeste", "AppTeste", "{97
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CTe.Dacte.OpenFast", "CTe.Dacte.OpenFast\CTe.Dacte.OpenFast.csproj", "{2DB1B4DC-ABC2-4B8B-B7AE-8C6EB3EDA210}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6F4C6C2-BBE7-42F7-B4FD-E62609C94D78}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Shared.NFe.Wsdl\Shared.NFe.Wsdl.projitems*{148e0e11-3fe5-4bf7-a64f-b919a0a8d9ba}*SharedItemsImports = 13
