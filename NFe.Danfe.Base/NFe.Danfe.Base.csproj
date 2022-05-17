@@ -12,13 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="NFCe\NFCe.frx" />
-    <None Remove="NFe\NFeEvento.frx" />
-    <None Remove="NFe\NFeRetrato.frx" />
-    <None Remove="NFe\NFeSimplificado.frx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="NFCe\NFCe.frx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
