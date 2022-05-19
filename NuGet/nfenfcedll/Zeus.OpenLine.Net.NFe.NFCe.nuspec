@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Zeus.OpenLine.Net.NFe.NFCe</id>
-        <version>1.1.10</version>
+        <version>1.1.11</version>
         <title>Zeus Openline NF-e e NFC-e (x86/x64)</title>
         <authors>Openline Sistemas, Zeus</authors>
         <owners>Openline Sistemas</owners>
@@ -30,7 +30,25 @@
 
 		</dependencies>
     </metadata>
-    <files> 
+    <files>
+		<file src="..\..\DFe.Classes\bin\Release\net48\DFe.Classes.dll" target="lib/net48/DFe.Classes.dll" />
+		<file src="..\..\DFe.Classes\bin\Release\net48\DFe.Classes.pdb" target="lib/net48/DFe.Classes.pdb" />
+		<file src="..\..\DFe.Utils\bin\Release\net48\DFe.Utils.dll" target="lib/net48/DFe.Utils.dll" />
+		<file src="..\..\DFe.Utils\bin\Release\net48\DFe.Utils.pdb" target="lib/net48/DFe.Utils.pdb" />
+		<file src="..\..\DFe.Wsdl\bin\Release\net48\DFe.Wsdl.dll" target="lib/net48/DFe.Wsdl.dll" />
+		<file src="..\..\DFe.Wsdl\bin\Release\net48\DFe.Wsdl.pdb" target="lib/net48/DFe.Wsdl.pdb" />
+		<file src="..\..\NFe.Classes\bin\Release\net48\NFe.Classes.dll" target="lib/net48/NFe.Classes.dll" />
+		<file src="..\..\NFe.Classes\bin\Release\net48\NFe.Classes.pdb" target="lib/net48/NFe.Classes.pdb" />
+		<file src="..\..\NFe.Utils\bin\Release\net48\NFe.Utils.dll" target="lib/net48/NFe.Utils.dll" />
+		<file src="..\..\NFe.Wsdl\bin\Release\net48\NFe.Wsdl.dll" target="lib/net48/NFe.Wsdl.dll" />
+		<file src="..\..\NFe.Wsdl\bin\Release\net48\NFe.Wsdl.pdb" target="lib/net48/NFe.Wsdl.pdb" />
+		<file src="..\..\NFe.Servicos\bin\Release\net48\NFe.Servicos.dll" target="lib/net48/NFe.Servicos.dll" />
+		<file src="..\..\NFe.Servicos\bin\Release\net48\NFe.Servicos.pdb" target="lib/net48/NFe.Servicos.pdb" />
+		<file src="..\..\NFe.Danfe.Base\bin\Release\net48\NFe.Danfe.Base.dll" target="lib/net48/NFe.Danfe.Base.dll" />
+		<file src="..\..\NFe.Danfe.Base\bin\Release\net48\NFe.Danfe.Base.pdb" target="lib/net48/NFe.Danfe.Base.pdb" />
+		<file src="..\..\NFe.Danfe.Fast\bin\Release\net48\NFe.Danfe.OpenFast.dll" target="lib/net48/NFe.Danfe.Fast.dll" />
+
+
 		<file src="..\..\DFe.Classes\bin\Release\netstandard2.0\DFe.Classes.dll" target="lib/netstandard2.0/DFe.Classes.dll" />
 		<file src="..\..\DFe.Classes\bin\Release\netstandard2.0\DFe.Classes.pdb" target="lib/netstandard2.0/DFe.Classes.pdb" />
 		<file src="..\..\DFe.Utils\bin\Release\netstandard2.0\DFe.Utils.dll" target="lib/netstandard2.0/DFe.Utils.dll" />
