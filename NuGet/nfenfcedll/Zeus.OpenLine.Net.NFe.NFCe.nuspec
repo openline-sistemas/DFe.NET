@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Zeus.OpenLine.Net.NFe.NFCe</id>
-        <version>1.1.11</version>
+        <version>1.1.12</version>
         <title>Zeus Openline NF-e e NFC-e (x86/x64)</title>
         <authors>Openline Sistemas, Zeus</authors>
         <owners>Openline Sistemas</owners>
@@ -50,6 +50,9 @@
 		<file src="..\..\NFe.Danfe.Base\bin\Release\net48\NFe.Danfe.Base.dll" target="lib/net48/NFe.Danfe.Base.dll" />
 		<file src="..\..\NFe.Danfe.Base\bin\Release\net48\NFe.Danfe.Base.pdb" target="lib/net48/NFe.Danfe.Base.pdb" />
 		<file src="..\..\NFe.Danfe.Fast\bin\Release\net48\NFe.Danfe.Fast.dll" target="lib/net48/NFe.Danfe.Fast.dll" />
+		<file src="..\..\NFe.Danfe.Fast\bin\Release\net48\FastReport.dll" target="lib/net48/FastReport.dll" />
+		<file src="..\..\NFe.Danfe.Fast\bin\Release\net48\FastReport.Editor.dll" target="lib/net48/FastReport.Editor.dll" />
+		<file src="..\..\NFe.Danfe.Fast\bin\Release\net48\FastReport.Bars.dll" target="lib/net48/FastReport.Bars.dll" />
 
 
 		<file src="..\..\DFe.Classes\bin\Release\netstandard2.0\DFe.Classes.dll" target="lib/netstandard2.0/DFe.Classes.dll" />
