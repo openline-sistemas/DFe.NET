@@ -32,4 +32,67 @@
 		  RetryDelayMilliseconds="300" />
 	</Target>
 	
+	
+	<Target Name="CopyFilesToProject" BeforeTargets="BeforeBuild">
+		<Copy
+		  SourceFiles="$(MSBuildThisFileDirectory)NFCe\NFCe.frx"
+		  DestinationFiles="$(OutDir)\NFCe\NFCe.frx"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+		<Copy
+		  SourceFiles="$(MSBuildThisFileDirectory)NFe\NFeEvento.frx"
+		  DestinationFiles="$(OutDir)\NFe\NFeEvento.frx"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+		<Copy
+		  SourceFiles="$(MSBuildThisFileDirectory)NFe\NFeRetrato.frx"
+		  DestinationFiles="$(OutDir)\NFe\NFeRetrato.frx"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+		<Copy
+		  SourceFiles="$(MSBuildThisFileDirectory)NFe\NFeSimplificado.frx"
+		  DestinationFiles="$(OutDir)\NFe\NFeSimplificado.frx"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+	</Target>
+	
+	<Target Name="PublishCopyFiles" AfterTargets="Publish">
+		<Copy
+		  SourceFiles="$(MSBuildThisFileDirectory)NFCe\NFCe.frx"
+		  DestinationFiles="$(OutDir)\NFCe\NFCe.frx"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+		<Copy
+		  SourceFiles="$(MSBuildThisFileDirectory)NFe\NFeEvento.frx"
+		  DestinationFiles="$(OutDir)\NFe\NFeEvento.frx"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+		<Copy
+		  SourceFiles="$(MSBuildThisFileDirectory)NFe\NFeRetrato.frx"
+		  DestinationFiles="$(OutDir)\NFe\NFeRetrato.frx"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+		<Copy
+		  SourceFiles="$(MSBuildThisFileDirectory)NFe\NFeSimplificado.frx"
+		  DestinationFiles="$(OutDir)\NFe\NFeSimplificado.frx"
+		  SkipUnchangedFiles="false"
+		  OverwriteReadOnlyFiles="true"
+		  Retries="3"
+		  RetryDelayMilliseconds="300" />
+	</Target>
+	
 </Project>
