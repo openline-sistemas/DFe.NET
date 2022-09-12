@@ -24,7 +24,7 @@ Entre no nosso **Discord** -> https://discord.gg/EE4TGKAkkG no grupo falaremos n
 ------------------
 A melhor maneira de você ter a última versão do Zeus em seu projeto é utilizando os pacotes Nugets abaixo
 
-[![Build status](https://ci.appveyor.com/api/projects/status/7igb6s48sw2p95o3/branch/master?svg=true)](https://ci.appveyor.com/project/adeniltonbs/zeus-net-nfe-nfce/branch/master) 
+[![Build status](https://github.com/ZeusAutomacao/DFe.NET/actions/workflows/DFe.NET_build.yml/badge.svg?branch=master)](https://github.com/ZeusAutomacao/DFe.NET/actions/workflows/DFe.NET_build.yml)
 [![Issues](https://img.shields.io/github/issues/ZeusAutomacao/DFe.NET.svg?style=flat-square)](https://github.com/ZeusAutomacao/DFe.NET/issues)
 
 
@@ -109,6 +109,14 @@ Foi necessário a instalação da biblioteca **libgdiplus**
     && apt-get install -y --no-install-recommends libgdiplus libc6-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+    
+Caso aconteça algum erro de System.OutOfMemoryException, utilize a versão 6.0.5, o código acima instala a versão padrão dependendo da versão do SO (6.0.4), para instalar a 6.0.5 utilize o seguinte código, nesse caso para Debian 10:
+
+> RUN apt-get update && apt-get remove libgdiplus -y && apt autoremove -y && apt-get install -y apt-transport-https dirmngr gnupg ca-certificates \
+ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF \
+ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster main" | tee /etc/apt/sources.list.d/mono-official-stable.list \
+ RUN apt-get update && apt-get install -y libgdiplus=6.0.5-0xamarin1+debian10b1 \
+ RUN apt show libgdiplus && rm -rf /var/lib/apt/lists/* 
 
 Tambem foi necessário copiar algumas **fontes**, o relatório de Danfe atual utiliza **Times New Roman**, as fontes contem royalties e não existe repositório online com as mesmas, porem as mesmas estão disponíveis na pasta do windows. (fontes instaladas: times.ttf, timesbd.ttf, timesbi.ttf, timesi.ttf)
 
