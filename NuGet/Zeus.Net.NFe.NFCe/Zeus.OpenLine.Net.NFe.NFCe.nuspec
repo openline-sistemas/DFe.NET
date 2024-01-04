@@ -22,13 +22,13 @@
 		<group targetFramework="netstandard2.0">
 			<dependency id="System.Drawing.Common" version="6.0.0" />
 			<dependency id="FastReport.OpenSource" version="2019.3.19" />
-			<dependency id="FastReport.OpenSource.Export.PdfSimple" version="2019.3.19" />
+			<dependency id="FastReport.OpenSource.Export.PdfSimple" version="2022.2.2" />
 		</group>
 
 		<group targetFramework="net6.0">
 			<dependency id="System.Drawing.Common" version="6.0.0" />
 			<dependency id="FastReport.OpenSource" version="2019.3.19" />
-			<dependency id="FastReport.OpenSource.Export.PdfSimple" version="2019.3.19" />
+			<dependency id="FastReport.OpenSource.Export.PdfSimple" version="2022.2.2" />
 		</group>
 
 		</dependencies>
